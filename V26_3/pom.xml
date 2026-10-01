@@ -30,7 +30,7 @@
         <version>2026.1.1.0.263</version>
     </parent>
 
-    <artifactId>InteractiveChatDiscordSrvAddon-V26_1</artifactId>
+    <artifactId>InteractiveChatDiscordSrvAddon-V26_3</artifactId>
 
     <repositories>
         <repository>
@@ -49,49 +49,52 @@
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-gson</artifactId>
-            <version>5.1.1</version>
+            <version>5.2.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-legacy</artifactId>
-            <version>5.1.1</version>
+            <version>5.2.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-plain</artifactId>
-            <version>5.1.1</version>
+            <version>5.2.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-gson</artifactId>
-            <version>5.1.1</version>
+            <version>5.2.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-api</artifactId>
-            <version>5.1.1</version>
+            <version>5.2.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-nbt</artifactId>
-            <version>5.1.1</version>
+            <version>5.2.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- 26.3: no BuildTools craftbukkit artifact was available. These two coordinates are local stand-ins for the
+             Lecithin 26.3-72-2b13697 API and server jars (Mojang-mapped); see tools/research/upgrade-263/IC-ADDON-263.md in the
+             Lycohinya repo for the install-file commands. -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>26.1-R0.1-SNAPSHOT</version>
+            <groupId>fun.bm.lecithin</groupId>
+            <artifactId>lecithin-api</artifactId>
+            <version>26.3.build.72-alpha</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>craftbukkit</artifactId>
-            <version>26.1-R0.1-SNAPSHOT</version>
+            <version>26.3-R0.1-LYCO263LOCAL</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
